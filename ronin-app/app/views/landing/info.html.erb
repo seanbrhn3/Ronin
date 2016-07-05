@@ -1,0 +1,8 @@
+<%= form_for :landing do |f|%>
+<h1>Information Gathering</h1>
+
+<h3>Get Local host information:</h3>
+    <%=link_to '<button>Data</button>'.html_safe, landing_ilh_path %>
+<h3>Open Ports</h3>
+   <p> <%= link_to 'port scan', landing_portScan_path%><p>    
+<%end%>
